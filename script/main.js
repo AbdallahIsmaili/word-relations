@@ -18,15 +18,18 @@ let names = [[], ["abdallah", "hey, that's me!, to be honest I love people who h
 ["imad", "To be honest I don't know anyone with that name, so i can't tell you anything. "], 
 ["nadia", "To be honest I don't know any girl with that name, so i can't tell you anything. "], 
 ["yassmine", "To be honest I don't know any girl with that name, so i can't tell you anything. "], 
-["salma", "To be honest I don't know any girl with that name, so i can't tell you anything. "],["farah", "To be honest I don't know any girl with that name, so i can't tell you anything. "],["othman", "This the name is one of the best of my friends, he is very friendly, funny and understand me well, If you are OTHMAN there, make sure you are a cool person. click here: <a href='/names/othman.html'>THIS IS OTHMAN!</a>"]
+["salma", "even if I don't know many girls with that name, I hate it so much (Nothing personal please). "],["farah", "To be honest I don't know any girl with that name, so i can't tell you anything. "],["othman", "This the name is one of the best of my friends, he is very friendly, funny and understand me well, If you are OTHMAN there, make sure you are a cool person. click here: <a href='/names/othman.html'>THIS IS OTHMAN!</a>"]
 ,["mohammed", "the name of my big brother, also one of the best of my classmates"],["muhammed", "the name of my big brother, also one of the best of my classmates"],["mohamed", "the name of my big brother, also one of the best of my classmates"],["ali", "one of the best of my classmates &#11088;"],["mehdi", "one of the best of my classmates, and a cool old friend &#11088;"],["mahdi", "one of the best of my classmates &#11088;"],["hamza", "one of the best of my classmates &#11088;"],["youssef", "one of the best of my classmates &#11088;"],["hafsa", "one of the best of my classmates &#11088;"],["mariam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."],["meriam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."],["maryam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."],["bilal", "one of the best of my classmates, and a cool old friend &#11088;"],["yahya", "one of the best of my classmates, and a cool old friend &#11088;"],["abdassamad", "this person is a developer just like me, I love people who share the same domain as mine, and Abdassamad is really cool person and headworker too."],["abdessamad", "this person is a developer just like me, I love people who share the same domain as mine, and Abdassamad is really cool person and headworker too."], 
-["aya", "The lovely name, it is the name of my beautiful sister's daughter."], ["rayhan", "The lovely name, it is the name of my beautiful sister's daughter."],["reyhan", "The lovely name, it is the name of my beautiful sister's daughter."],["aicha", "The best name in the world, it is my mother name, I love my mother so much she is a wonderful woman and greet one, all the love to that name."],["aisha", "The best name in the world, it is my mother name, I love my mother so much she is a wonderful woman and greet one, all the love to that name."],["ibrahim", "to be honest even if this my father name, I don't like it so much, because it remembers me by my father..."]]
+["aya", "The lovely name, it is the name of my beautiful sister's daughter."], ["rayhan", "The lovely name, it is the name of my beautiful sister's daughter."],["reyhan", "The lovely name, it is the name of my beautiful sister's daughter."],["aicha", "The best name in the world, it is my mother name, I love my mother so much she is a wonderful woman and greet one, all the love to that name."],["aisha", "The best name in the world, it is my mother name, I love my mother so much she is a wonderful woman and greet one, all the love to that name."],["ibrahim", "to be honest even if this my father name, I don't like it so much, because it remembers me by my father..."],["ilham", "I have an Otaku friend with that name and she is so sweet."], ["elham", "I have an Otaku friend with that name and she is so sweet."], ["asmae", "even if I don't know many girls with that name, that name owners are so sweet."], ["asmaa", "even if I don't know many girls with that name, that name owners are so sweet."], ["shaimae", "This name remember me of my cuson."]]
 
 function findMyName() {
     let index = 0;
     for (let i = 0; i < names.length; i++) {
 
-        if (names[i][0] == searched.value || names[i][0] == searched.value.replace(/\s/g, "")) {
+        let searchedName = searched.value
+        searchedName = searchedName.toLowerCase();
+
+        if (names[i][0] == searchedName || names[i][0] == searchedName.replace(/\s/g, "")) {
             index = i;
             break
         }else{
@@ -43,6 +46,6 @@ function findMyName() {
         rel_par.innerHTML = "Nothing here! Sorry, I think I don't know any one with this name";
     };
 
-    searched.value = "";
+    searchedName = "";
 }
 
