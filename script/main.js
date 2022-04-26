@@ -49,7 +49,7 @@ function findMyName() {
         rel_par.innerHTML = "Nothing here! Sorry, I think I don't know any one with this name";
     };
 
-    searchedName = "";
+    searched.value = "";
 
     back.style.display='block';
 
