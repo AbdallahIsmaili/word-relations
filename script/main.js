@@ -13,13 +13,13 @@ function findMyName() {
     let index = 0;
     for (let i = 0; i < names.length; i++) {
 
-        if (names[i][0] == searched.value) {
+        if (names[i][0] == searched.value || names[i][0] == searched.value.replace(/\s/g, "")) {
             index = i;
             break
         }else{
             index = 0;
         }
-    }
+    };
 
     if (index != 0) {
         personName.innerHTML = names[index][0];
@@ -27,6 +27,8 @@ function findMyName() {
     }else{
         personName.innerHTML = "Not found";
         rel_par.innerHTML = "Nothing here!";
-    }
+    };
+
+    searched.value = "";
 }
 
