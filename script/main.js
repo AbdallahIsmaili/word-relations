@@ -1,6 +1,8 @@
 let rel_par = document.getElementById('discription');
 let personName = document.getElementById('main-header');
-let searched = document.getElementById('name-input')
+let searched = document.getElementById('name-input');
+let back = document.getElementById('back-btn');
+
 
 // Here is the array i used it like a Database at the moment.
 let names = [[], ["abdallah", "hey, that's me!, to be honest I love people who have the same name of mine, I think They are special as same as me!"], ["abdellah", "hey, that's me!, to be honest I love people who have the same name of mine, I think They are special as same as me!"], ["abd allah", "hey, that's me!, to be honest I love people who have the same name of mine, I think They are special as same as me!"], ["abdalah", "hey, that's me!, to be honest I love people who have the same name of mine, I think They are special as same as me!"], 
@@ -48,5 +50,8 @@ function findMyName() {
     };
 
     searchedName = "";
+
+    back.style.display='block';
+
 }
 
