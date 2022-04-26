@@ -17,7 +17,8 @@ let names = [[], ["abdallah", "hey, that's me!, to be honest I love people who h
 ["yosra", "To be honest I don't know any girl with that name, so i can't tell you anything. "], 
 ["imad", "To be honest I don't know anyone with that name, so i can't tell you anything. "], 
 ["nadia", "To be honest I don't know any girl with that name, so i can't tell you anything. "], 
-["farah", "To be honest I don't know any girl with that name, so i can't tell you anything. "],["othman", "This the name is one of the best of my friends, he is very friendly, funny and understand me well, If you are OTHMAN there, make sure you are a cool person. click here: <a href='/names/othman.html'>THIS IS OTHMAN!</a>"], ]
+["farah", "To be honest I don't know any girl with that name, so i can't tell you anything. "],["othman", "This the name is one of the best of my friends, he is very friendly, funny and understand me well, If you are OTHMAN there, make sure you are a cool person. click here: <a href='/names/othman.html'>THIS IS OTHMAN!</a>"]
+,["mohammed", "the name of my big brother, also one of the best of my classmates"],["muhammed", "the name of my big brother, also one of the best of my classmates"],["mohamed", "the name of my big brother, also one of the best of my classmates"],["ali", "one of the best of my classmates &#11088;"],["mehdi", "one of the best of my classmates, and a cool old friend &#11088;"],["mahdi", "one of the best of my classmates &#11088;"],["hamza", "one of the best of my classmates &#11088;"],["youssef", "one of the best of my classmates &#11088;"],["hafsa", "one of the best of my classmates &#11088;"],["mariam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."],["meriam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."],["maryam", "I know so many girls with that name, some of them are nice and good girls, however, not all people are good. <br> To be honest there a girl with that name I hate so much and I really want her to be removed from my life, but there is another one I respect."]]
 
 function findMyName() {
     let index = 0;
@@ -35,8 +36,8 @@ function findMyName() {
         personName.innerHTML = names[index][0];
         rel_par.innerHTML = names[index][1];
     }else{
-        personName.innerHTML = "Not found";
-        rel_par.innerHTML = "Nothing here!";
+        personName.innerHTML = names[index][0];
+        rel_par.innerHTML = "Nothing here! Sorry, I think I don't know any one with this name";
     };
 
     searched.value = "";
