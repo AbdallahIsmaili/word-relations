@@ -51,8 +51,9 @@ html{
 body{
     font-family: "Coolvetica", sans-serif;
     color: rgb(255, 255, 255);
-    /* background: black; */
-    background: black;
+    background-image: url("/assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
     overflow-x: hidden;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -66,4 +67,40 @@ body{
     100% {
         opacity: 1;
      }
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: pink;
+}
+
+.container{
+  margin: auto 10rem;
+}
+
+.special-link{
+  font-size: 1.2rem;
+}
+
+#main-header{
+  text-align: center;
+  margin: 3rem;
+  font-size: 7rem;
+}
+
+#discription{
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.p-item p{
+  font-size: 1rem;
+}
+
+.p-item:last-child{
+  color: skyblue;
 }
