@@ -171,3 +171,14 @@ a {
   margin: auto;
   margin-top: 25% ;
 }
+
+.spectail-ch{
+  text-align: center;
+  margin: auto;
+  font-size: 3rem;
+}
+
+.btn{
+  text-align: center;
+  margin: 4rem auto;
+}
