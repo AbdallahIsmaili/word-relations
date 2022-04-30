@@ -51,7 +51,7 @@ html {
 body {
   font-family: "Coolvetica", sans-serif;
   color: rgb(255, 255, 255);
-  background: lightcoral;
+  background: #212121;
   /* background-repeat: no-repeat;
   background-size: 100% auto; */
   overflow-x: hidden;
@@ -111,6 +111,7 @@ a {
   padding-bottom: 1rem;
   border: 3px solid pink;
   border-radius: 7px;
+  font-size: 20px;
 }
 
 #name-input:focus {
@@ -130,7 +131,7 @@ a {
 ::placeholder {
   font-family: "Poppins", sans-serif;
   margin-left: 10px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .submit-input {
