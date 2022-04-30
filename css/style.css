@@ -51,9 +51,9 @@ html {
 body {
   font-family: "Coolvetica", sans-serif;
   color: rgb(255, 255, 255);
-  background-image: url("/assets/images/background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background: lightcoral;
+  /* background-repeat: no-repeat;
+  background-size: 100% auto; */
   overflow-x: hidden;
   animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
@@ -182,4 +182,239 @@ a {
 .btn{
   text-align: center;
   margin: 4rem auto;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: auto 8rem;
+  }
+  #main-header {
+    margin: 2rem;
+    font-size: 6rem;
+  }
+  .p-item p {
+    font-size: 0.8rem;
+  }
+  #name-input {
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border-radius: 5px;
+  }
+  .submit-input {
+    margin: 5px;
+    padding: 0.9rem 0.9rem;
+    border-radius: 6px;
+  }
+  .submit-input {
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container {
+    margin: auto 3.5rem;
+  }
+  #discription {
+    letter-spacing: 2px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  #main-header {
+    margin: 5.4rem;
+    font-size: 6.1rem;
+  }
+  li {
+    font-size: 1.5rem;
+    list-style: none;
+  }
+  .p-item p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+  #name-input {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .submit-input {
+    padding: 1.5rem 1rem;
+    border-radius: 6px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: auto;
+  }
+  #discription {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.88rem;
+  }
+  #main-header {
+    font-size: 5rem;
+    margin: 4.5rem;
+  }
+  .p-item p{
+    font-size: 1.3rem;
+    margin-top: 1.5rem
+  }
+  .p-item {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+  }
+  #name-input {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    width: 85%;
+    margin-top: 1.5rem;
+  }
+  .inputs {
+    flex-direction: column;
+  }
+  .submit-input {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #main-header {
+    font-size: 4rem;
+    margin: 2rem;
+  }
+  #discription {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.185rem;
+  }
+  .p-item p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .p-item {
+    font-size: 1rem;
+  }
+  #name-input {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.2rem;
+    width: 85%;
+    margin-top: 0.1rem;
+  }
+  .submit-input {
+    width: 40%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #main-header {
+    font-size: 4.1rem;
+    margin: 2rem;
+  }
+  #discription {
+    letter-spacing: 1.8px;
+    font-size: 1.19rem;
+  }
+  .p-item p {
+    font-size: 1.2rem;
+    margin-top: .8rem;
+  }
+  .p-item {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 393px){
+  #main-header {
+    font-size: 3.5rem;
+    margin: 1.5rem;
+  }
+  .p-item p {
+    font-size: 1rem;
+    margin-top: .8rem;
+  }
+  .p-item {
+    font-size: 1rem;
+  }
+  #name-input {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.2rem;
+    width: 85%;
+    margin-top: 0.1rem;
+  }
+  .submit-input {
+    width: 40%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px){
+  #main-header {
+    font-size: 3.5rem;
+    margin: 1.5rem;
+  }
+  .p-item p {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+  }
+  .p-item {
+    font-size: 0.8rem;
+  }
+  #name-input {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0rem;
+    width: 90%;
+    margin-top: 0rem;
+  }
+  .submit-input {
+    width: 45%;
+    padding: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 280px){
+  #discription {
+    letter-spacing: 1px;
+    text-align: center;
+    margin-left: -2.3rem;
+    font-size: 0.8rem;
+  }
+  #main-header {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  .p-item p {
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+  }
+  .p-item {
+    font-size: 0.8rem;
+  }
+  #name-input {
+    margin-left: -0.5rem;
+    width: 90%;
+  }
+  .submit-input {
+    width: 55%;
+    padding: 0.7rem;
+    margin-left: 3.5rem;
+  }
 }
